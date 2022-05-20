@@ -33,7 +33,48 @@ button {
   border: 0;
 }
 
+.hamburger-menu .menu {
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger-menu .menu #active {
+  color: #fb2e86;
+}
+
+.hamburger-menu .menu a {
+  color: #000;
+  font-weight: bold;
+  padding: 1em 0;
+}
+
+.hamburger-menu .menu a:hover {
+  color: #fb2e86;
+}
+
 .contact-nav {
+  display: none;
   background-color: #7e33e0;
   color: #fff;
   font-family: 'Lato', sans-serif;
@@ -73,6 +114,9 @@ button {
 }
 
 @media (min-width: 778px) {
+  .contact-nav {
+    display: block;
+  }
   .contact-nav .flex {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -82,6 +126,10 @@ button {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+}
+
+nav.main-nav {
+  position: relative;
 }
 
 nav.main-nav .flex {
@@ -193,7 +241,7 @@ header .lamp {
 }
 
 header .hero-text {
-  padding: 0 3em;
+  padding-bottom: 3em;
 }
 
 @media (min-width: 768px) {

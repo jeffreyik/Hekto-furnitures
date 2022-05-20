@@ -41,9 +41,41 @@ button {
     border: 0;
 }
 
+//Hamburger menu
+.hamburger-menu {
+    .menu {
+        overflow: hidden;
+        height: 0;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        transition: all 0.3s ease-in-out;
+        #active {
+            color: $pinkColor;
+        }
+        a {
+            color: #000;
+            font-weight: bold;
+            padding: 1em 0;
+            &:hover {
+                color: $pinkColor;
+            }
+        }
+    }
+}
+
+
 // Contact nav
 
 .contact-nav {
+    display: none;
     background-color: $purpleColor;
     color: #fff;
     font-family: 'Lato', sans-serif;
@@ -74,6 +106,7 @@ button {
 // Media query for contact nav
 @media (min-width: 778px) {
     .contact-nav {
+        display: block;
         .flex {
             flex-direction: row;
             justify-content: space-between;
@@ -84,6 +117,8 @@ button {
 
 // Main Nav
 nav.main-nav {
+    
+    position: relative;
     .flex {
         justify-content: space-between;
         align-items: center;
@@ -184,7 +219,7 @@ header {
         display: none;
     }
     .hero-text {
-        padding: 0 3em;
+        padding-bottom: 3em;
     }
 }
 
