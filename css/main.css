@@ -14,6 +14,7 @@ font-family: 'Poppins', sans-serif; */
 body {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 500;
+  line-height: 1.4;
 }
 
 .container {
@@ -227,6 +228,14 @@ header .hero-img .ellipse-2 {
   z-index: 0;
 }
 
+header .hero-img .discount {
+  position: absolute;
+  z-index: 12;
+  width: 100px;
+  top: 0;
+  right: 0;
+}
+
 header .hero-img .couch {
   position: relative;
   z-index: 10;
@@ -236,15 +245,16 @@ header .lamp {
   position: absolute;
   top: 0;
   left: 0;
-  width: 250px;
+  width: 15%;
   display: none;
 }
 
 header .hero-text {
   padding-bottom: 3em;
+  width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 898px) {
   header .flex {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -261,6 +271,10 @@ header .hero-text {
   }
   header .lamp {
     display: block;
+  }
+  header .hero-text {
+    width: 70%;
+    padding-left: 10%;
   }
 }
 
@@ -307,7 +321,7 @@ header .hero-text {
 }
 
 .featured #one {
-  background-color: green;
+  background-color: #08D15F;
 }
 
 .featured #two {
@@ -441,6 +455,52 @@ section.latest .thumbnail img {
 
 section.latest .p-bottom {
   padding-bottom: 5em;
+}
+
+section.shopex {
+  text-align: center;
+}
+
+section.shopex h2 {
+  color: #1a0b5b;
+  padding: 2em 0;
+}
+
+section.shopex img {
+  width: 50px;
+  padding: 2em 0;
+}
+
+section.shopex .flex {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.shopex .small-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 250px;
+  padding: 2em;
+  margin: 0  2em 2em 0;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
 .flex {
