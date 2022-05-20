@@ -35,6 +35,14 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+}
+
+h2 {
+    font-weight: 900;
+}
+
 img {
     width: 100%;
 }
@@ -272,8 +280,11 @@ header {
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 2em;
-    } .indicator span{
+
+    } .card {
+        margin: 1em;
+    }
+    .indicator span{
         display: inline-block;
         width: 20px;
         border-radius: 10px;
@@ -318,10 +329,13 @@ section.latest {
         h2 {
             color: $blueColor;
             padding: 1em 0;
-        } .links {
+        } 
+        .links {
             display: flex;
             flex-wrap: wrap;
-            gap: 1em;
+            * {
+                padding: .5em;
+            }
             a {
                 font-family: 'Lato', sans-serif;
                 color: $blueColor;
@@ -343,7 +357,9 @@ section.latest {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: 2em;
+        * {
+            margin: .5em;
+        }
         .text {
             padding: 1em 0;
             display: flex;
@@ -380,6 +396,7 @@ section.latest {
 // Shopex 
 section.shopex {
     text-align: center;
+    padding-bottom: 5em;
     h2 {
         color: $blueColor;
         padding: 2em 0;
@@ -403,6 +420,80 @@ section.shopex {
         padding: 2em;
         margin: 0  2em 2em 0;
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    }
+}
+
+// Unique Features
+section.unique-features {
+    padding: 1em 0;
+    background-color: $grayColor;
+    .image {
+        position: relative;
+        #ellipse {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        } img {
+            position: relative;
+            z-index: 1;
+        }
+    }
+    .flex {
+        flex-direction: column;
+    }
+    .product-features {
+        display: flex;
+        flex-direction: column;
+    }
+    .feature-list {
+        padding: 1em 0;
+        
+    }.bullets {
+        margin-right: 1em;
+        width: 10px;
+        height: 10px;
+        background-color: #000;
+        border-radius: 50%;
+    } 
+    .bullet-1 {
+        background-color: $pinkColor;
+    }
+    .bullet-2 {
+        background-color: $blueColor;
+    }
+    .bullet-3 {
+        background-color: $greenColor;
+    }
+    .list {
+        display: flex;
+        align-items: center;
+        padding: .5em 0;
+        p {
+            padding-left: 1em;
+            width: 100%;
+        }
+    }
+    form {
+        display: flex;
+        button {
+            margin-right: 2em;
+        }
+    }
+    h2 {
+        color: $blueColor;
+        text-align: center;
+    }
+}
+
+// Unique features media query
+@media (min-width: 778px) {
+    section.unique-features {
+        .flex {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }
 
