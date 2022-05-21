@@ -407,7 +407,7 @@ section.shopex {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        gap: 1em;
+        gap: 2em;
     }
 
     .small-card {
@@ -423,7 +423,7 @@ section.shopex {
 
 // Unique Features
 section.unique-features {
-    padding: 1em 0;
+    padding: 3em 0;
     background-color: $grayColor;
     .image {
         position: relative;
@@ -494,6 +494,211 @@ section.unique-features {
         }
     }
 }
+
+// Trending
+section.trending {
+    text-align: center;
+    padding: 3em;
+    .flex {
+        flex-direction: column;
+    }
+    h2 {
+        color: $blueColor;
+        font-weight: 900;
+        padding-bottom: 1em;
+    }
+
+    .thumbnail {
+        background-color: $grayColor;
+    }
+
+    .card {
+        padding: .5em;
+    }
+    .flex-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        padding-bottom: 2em;
+    }
+    .grid-wrapper {
+        margin: 10em 0;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1em;
+    }
+    .flex-row {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        height: 200px;
+        gap: 1em;
+        img {
+            width: 4.5em;
+            object-fit: contain;
+        }
+        div {
+            display: flex;
+            text-align: left;
+            gap: .5em;
+            font-size: 12px;
+        }
+        .price-tag {
+            display: flex;
+            flex-direction: column;
+        }
+        .thumbnail {
+            background-color: $grayColor;
+        }
+    }
+    .row.bg-pink {
+        background-color: #fb2e870f;
+    }
+    .row {
+        display: flex;
+        justify-content: space-between;
+        background-color: $grayColor;
+        padding: 2em;
+        font-size: 12px;
+        img {
+            width: 5rem;
+            object-fit: contain;
+        }
+        a {
+            color: $pinkColor;
+            font-family: 'Lato', sans-serif;
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (min-width: 500px) {
+    section.trending {
+    .row {
+        img {
+            width: 8.5rem;
+        }
+    }
+    }
+}
+
+// Trending Media query
+@media (min-width: 925px) {
+    section.trending {
+        .grid-wrapper {
+            flex-direction: row;
+            margin: 0;
+        }
+        .row {
+            img {
+                width: 20em;
+            }
+        }
+    }
+}
+
+// Discount Item
+section.discount-item {
+    text-align: center;
+    width: 100%;
+    h1 {
+        color: $blueColor;
+    }
+    .discount-showcase {
+        padding: 1em 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        .fa-check {
+            padding-right: 1em;
+        }
+        p {
+            padding: 1em 0;
+        }
+        .pink {
+            color: $pinkColor;
+        }
+        img {
+            width: 100%;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: 1fr;
+            padding-bottom: 1em;
+            text-align: left;
+        }
+    }
+    padding: 2em 0;
+    .flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    h2, .links {
+        text-align: center;
+        color: $blueColor;
+    }
+    .links {
+        padding: 1em 0;
+     a{
+        font-weight: 600;
+        padding-left: 25px;
+        &:hover {
+            color: $pinkColor;
+        }
+    }
+}
+    a#active {
+        color: $pinkColor;
+        text-decoration: underline;
+    }
+    .right-side {
+        margin-top: 2em;
+        position: relative;
+        .ellipse {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: auto;
+            z-index: 0;
+            right: 0;
+            width: 70%;
+        }
+        .chair {
+            position: relative;
+            z-index: 1;
+        }
+    }
+}
+
+
+@media (min-width: 778px) {
+    section.discount-item {
+        text-align: left;
+        .discount-showcase {
+            grid-template-columns: 1fr 1fr;
+            text-align: left;
+            .features {
+                grid-template-columns: 1fr 1fr;
+                text-align: left;
+            }
+        }
+        img { 
+            width: 10%;
+        }
+        .right-side {
+            margin-top: 0;
+        }  text-align: left;
+        }
+    }
+ 
 
 
 // Utilities

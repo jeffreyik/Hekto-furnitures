@@ -495,7 +495,7 @@ section.shopex .flex {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 1em;
+  gap: 2em;
 }
 
 section.shopex .small-card {
@@ -519,7 +519,7 @@ section.shopex .small-card {
 }
 
 section.unique-features {
-  padding: 1em 0;
+  padding: 3em 0;
   background-color: #f1f0ff;
 }
 
@@ -622,6 +622,285 @@ section.unique-features h2 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+section.trending {
+  text-align: center;
+  padding: 3em;
+}
+
+section.trending .flex {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.trending h2 {
+  color: #1a0b5b;
+  font-weight: 900;
+  padding-bottom: 1em;
+}
+
+section.trending .thumbnail {
+  background-color: #f1f0ff;
+}
+
+section.trending .card {
+  padding: .5em;
+}
+
+section.trending .flex-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2em;
+  padding-bottom: 2em;
+}
+
+section.trending .grid-wrapper {
+  margin: 10em 0;
+  width: 100%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1em;
+}
+
+section.trending .flex-row {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  height: 200px;
+  gap: 1em;
+}
+
+section.trending .flex-row img {
+  width: 4.5em;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+section.trending .flex-row div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  gap: .5em;
+  font-size: 12px;
+}
+
+section.trending .flex-row .price-tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.trending .flex-row .thumbnail {
+  background-color: #f1f0ff;
+}
+
+section.trending .row.bg-pink {
+  background-color: #fb2e870f;
+}
+
+section.trending .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #f1f0ff;
+  padding: 2em;
+  font-size: 12px;
+}
+
+section.trending .row img {
+  width: 5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+section.trending .row a {
+  color: #fb2e86;
+  font-family: 'Lato', sans-serif;
+  text-decoration: underline;
+}
+
+@media (min-width: 500px) {
+  section.trending .row img {
+    width: 8.5rem;
+  }
+}
+
+@media (min-width: 925px) {
+  section.trending .grid-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0;
+  }
+  section.trending .row img {
+    width: 20em;
+  }
+}
+
+section.discount-item {
+  text-align: center;
+  width: 100%;
+  padding: 2em 0;
+}
+
+section.discount-item h1 {
+  color: #1a0b5b;
+}
+
+section.discount-item .discount-showcase {
+  padding: 1em 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  place-items: center;
+}
+
+section.discount-item .discount-showcase .fa-check {
+  padding-right: 1em;
+}
+
+section.discount-item .discount-showcase p {
+  padding: 1em 0;
+}
+
+section.discount-item .discount-showcase .pink {
+  color: #fb2e86;
+}
+
+section.discount-item .discount-showcase img {
+  width: 100%;
+}
+
+section.discount-item .discount-showcase .features {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  padding-bottom: 1em;
+  text-align: left;
+}
+
+section.discount-item .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.discount-item h2, section.discount-item .links {
+  text-align: center;
+  color: #1a0b5b;
+}
+
+section.discount-item .links {
+  padding: 1em 0;
+}
+
+section.discount-item .links a {
+  font-weight: 600;
+  padding-left: 25px;
+}
+
+section.discount-item .links a:hover {
+  color: #fb2e86;
+}
+
+section.discount-item a#active {
+  color: #fb2e86;
+  text-decoration: underline;
+}
+
+section.discount-item .right-side {
+  margin-top: 2em;
+  position: relative;
+}
+
+section.discount-item .right-side .ellipse {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: auto;
+  z-index: 0;
+  right: 0;
+  width: 70%;
+}
+
+section.discount-item .right-side .chair {
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 778px) {
+  section.discount-item {
+    text-align: left;
+    text-align: left;
+  }
+  section.discount-item .discount-showcase {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    text-align: left;
+  }
+  section.discount-item .discount-showcase .features {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    text-align: left;
+  }
+  section.discount-item img {
+    width: 10%;
+  }
+  section.discount-item .right-side {
+    margin-top: 0;
   }
 }
 
