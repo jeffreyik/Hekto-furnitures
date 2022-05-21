@@ -527,6 +527,7 @@ section.trending {
 
     .card {
         padding: .5em;
+        margin: 1em;
         h3 {
             color: $blueColor;
         }
@@ -536,7 +537,6 @@ section.trending {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: 2em;
         padding-bottom: 2em;
     }
     .grid-wrapper {
@@ -546,7 +546,6 @@ section.trending {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 1em;
     }
     .flex-row {
         display: inline-flex;
@@ -554,7 +553,7 @@ section.trending {
         justify-content: center;
         align-items: stretch;
         height: 200px;
-        gap: 1em;
+        padding-top: 2em;
         img {
             width: 4.5em;
             object-fit: contain;
@@ -564,6 +563,7 @@ section.trending {
             text-align: left;
             gap: .5em;
             font-size: 12px;
+            margin: .5em;
         }
         .price-tag {
             display: flex;
@@ -580,8 +580,9 @@ section.trending {
         display: flex;
         justify-content: space-between;
         background-color: $grayColor;
-        padding: 2em;
+        padding: 2.5em;
         font-size: 12px;
+        margin: 1em;
         img {
             width: 5rem;
             object-fit: contain;
@@ -664,6 +665,7 @@ section.discount-item {
     .links {
         padding: 1em 0;
      a{
+         color: $blueColor;
         font-weight: 600;
         padding-left: 25px;
         &:hover {

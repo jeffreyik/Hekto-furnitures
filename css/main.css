@@ -666,6 +666,7 @@ section.trending .thumbnail {
 
 section.trending .card {
   padding: .5em;
+  margin: 1em;
 }
 
 section.trending .card h3 {
@@ -684,7 +685,6 @@ section.trending .flex-wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 2em;
   padding-bottom: 2em;
 }
 
@@ -702,7 +702,6 @@ section.trending .grid-wrapper {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 1em;
 }
 
 section.trending .flex-row {
@@ -720,7 +719,7 @@ section.trending .flex-row {
       -ms-flex-align: stretch;
           align-items: stretch;
   height: 200px;
-  gap: 1em;
+  padding-top: 2em;
 }
 
 section.trending .flex-row img {
@@ -736,6 +735,7 @@ section.trending .flex-row div {
   text-align: left;
   gap: .5em;
   font-size: 12px;
+  margin: .5em;
 }
 
 section.trending .flex-row .price-tag {
@@ -764,8 +764,9 @@ section.trending .row {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #f1f0ff;
-  padding: 2em;
+  padding: 2.5em;
   font-size: 12px;
+  margin: 1em;
 }
 
 section.trending .row img {
@@ -869,6 +870,7 @@ section.discount-item .links {
 }
 
 section.discount-item .links a {
+  color: #1a0b5b;
   font-weight: 600;
   padding-left: 25px;
 }
