@@ -32,6 +32,7 @@ ul {
 
 h2 {
   font-weight: 900;
+  color: #1a0b5b;
 }
 
 img {
@@ -495,7 +496,6 @@ section.shopex .flex {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 2em;
 }
 
 section.shopex .small-card {
@@ -514,6 +514,7 @@ section.shopex .small-card {
           justify-content: center;
   width: 250px;
   padding: 2em;
+  margin: 1em;
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
@@ -640,7 +641,23 @@ section.trending .flex {
 section.trending h2 {
   color: #1a0b5b;
   font-weight: 900;
-  padding-bottom: 1em;
+  padding-bottom: .5em;
+}
+
+section.trending .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.trending .price * {
+  padding: 0 1em;
+}
+
+section.trending .price .line-through {
+  text-decoration: line-through;
+  color: #aaa;
+  font-weight: 500;
 }
 
 section.trending .thumbnail {
@@ -649,6 +666,10 @@ section.trending .thumbnail {
 
 section.trending .card {
   padding: .5em;
+}
+
+section.trending .card h3 {
+  color: #1a0b5b;
 }
 
 section.trending .flex-wrapper {
@@ -902,6 +923,298 @@ section.discount-item .right-side .chair {
   section.discount-item .right-side {
     margin-top: 0;
   }
+}
+
+section.top {
+  color: #1a0b5b;
+  padding-bottom: 4em;
+}
+
+section.top p {
+  font-weight: 600;
+  padding: .5em 0;
+}
+
+section.top img {
+  width: 80%;
+}
+
+section.top .flex-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em 0;
+}
+
+section.top .flex {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.top .rounded-card {
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  padding: 1em;
+  margin-bottom: 1em;
+  width: 220px;
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.top .chair-showcase {
+  padding: 1em 1em;
+}
+
+section.top .indicators {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.top .indicators #active {
+  background-color: #fb2e86;
+}
+
+section.top .indicators span {
+  display: block;
+  margin: 0 .5em;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #fb2e86;
+  background-color: #fff;
+}
+
+section.newsletter {
+  padding: 5em 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section.newsletter .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+section.newsletter button {
+  margin-top: 1em;
+}
+
+@media (min-width: 778px) {
+  section.newsletter h2 {
+    max-width: 50%;
+  }
+}
+
+section.sponsors .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3em 0;
+}
+
+section.sponsors img {
+  width: 100%;
+}
+
+@media (min-width: 778px) {
+  section.sponsors img {
+    width: 40em;
+  }
+}
+
+section.blog {
+  color: #1a0b5b;
+}
+
+section.blog h2 {
+  text-align: center;
+  padding-bottom: 1.5em;
+}
+
+section.blog .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2em;
+}
+
+section.blog img {
+  border-radius: 15px;
+}
+
+section.blog article {
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  margin: 1em 0;
+  width: 20em;
+}
+
+section.blog h3 {
+  padding-top: 1em;
+}
+
+section.blog p {
+  padding: 1em 0;
+}
+
+section.blog .description {
+  padding: 1em;
+}
+
+section.blog .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.blog .about h5 {
+  padding-right: 2em;
+}
+
+section.blog a {
+  text-decoration: underline;
+}
+
+section.blog #active {
+  color: #fb2e86;
+}
+
+footer {
+  margin-top: 3em;
+  background-color: #f1f0ff;
+  padding-top: 2em;
+}
+
+footer .flex {
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .flex div {
+  padding: 1.5em;
+}
+
+footer p {
+  padding: .5em 0;
+  font-size: 12px;
+}
+
+footer .logo {
+  padding-bottom: 1em;
+}
+
+footer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1em;
+}
+
+footer form input {
+  padding: 1em;
+  border: 0;
+}
+
+footer form button {
+  background-color: #fb2e86;
+  color: #fff;
+  padding: .3em;
+  border-radius: 5px;
+  width: 30%;
+}
+
+footer h3 {
+  padding-bottom: 1em;
+}
+
+footer a {
+  display: block;
+  padding: .5em 0;
+  color: #333;
+  font-size: 12px;
+}
+
+section.footer {
+  background-color: #ccc;
+  font-size: 12px;
+}
+
+section.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1em 0;
+}
+
+section.footer .icons img {
+  width: 20px;
+  height: 20px;
 }
 
 .flex {

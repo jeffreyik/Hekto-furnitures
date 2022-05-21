@@ -41,7 +41,9 @@ ul {
 
 h2 {
     font-weight: 900;
+    color: $blueColor;
 }
+
 
 img {
     width: 100%;
@@ -407,7 +409,6 @@ section.shopex {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        gap: 2em;
     }
 
     .small-card {
@@ -417,6 +418,7 @@ section.shopex {
         justify-content: center;
         width: 250px;
         padding: 2em;
+        margin: 1em;
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     }
 }
@@ -505,15 +507,29 @@ section.trending {
     h2 {
         color: $blueColor;
         font-weight: 900;
-        padding-bottom: 1em;
+        padding-bottom: .5em;
     }
-
+    
+    .price {
+        display: flex;
+        * {
+            padding: 0 1em;
+        }
+        .line-through {
+            text-decoration: line-through;
+            color: #aaa;
+            font-weight: 500;
+        }
+    }
     .thumbnail {
         background-color: $grayColor;
     }
 
     .card {
         padding: .5em;
+        h3 {
+            color: $blueColor;
+        }
     }
     .flex-wrapper {
         display: flex;
@@ -697,9 +713,217 @@ section.discount-item {
             margin-top: 0;
         }  text-align: left;
         }
-    }
- 
+}
 
+// Top Categories
+section.top {
+    color: $blueColor;
+    padding-bottom: 4em;
+    p {
+        font-weight: 600;
+        padding: .5em 0;
+    } img {
+        width: 80%;
+    }
+    .flex-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 2em 0;
+    }
+    .flex {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+    .rounded-card {
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        padding: 1em;
+        margin-bottom: 1em;
+        width: 220px;
+        height: 220px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .chair-showcase {
+        padding: 1em 1em;
+    }
+    .indicators {
+        display: flex;
+        #active {
+            background-color: $pinkColor;
+        }
+    span {
+        display: block;
+        margin: 0 .5em;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 2px solid $pinkColor;
+        background-color: #fff;
+    }
+}
+}
+
+section.newsletter {
+    padding: 5em 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    button {
+        margin-top: 1em;
+    }
+}
+ 
+@media (min-width: 778px) {
+    section.newsletter {
+        h2 {    
+            max-width: 50%;
+    }
+}
+}
+
+// Sponsors
+section.sponsors {
+    .flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3em 0;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 778px) {
+    section.sponsors {
+        img {
+            width: 40em;
+        }
+    }
+}
+
+// Latest Blog
+section.blog {
+    color: $blueColor;
+    h2 {
+        text-align: center;
+        padding-bottom: 1.5em;
+    }
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+    img {
+        border-radius: 15px;
+    }
+    article {
+        border-radius: 15px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        margin: 1em 0;
+        width: 20em;
+    }
+    h3 {
+        padding-top: 1em;
+    }
+    p {
+        padding: 1em 0;
+    }
+    .description {
+        padding: 1em;
+    }
+    .about {
+        display: flex;
+        h5 {
+            padding-right: 2em;
+        }
+    }
+    a {
+        text-decoration: underline;
+    }
+    #active {
+        color: $pinkColor;
+    }
+}
+
+// Footer
+footer {
+    margin-top: 3em;
+    background-color: $grayColor;
+    padding-top: 2em;
+    .flex {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;  
+    div {
+        padding: 1.5em;
+    }
+    }
+    p {
+        padding: .5em 0;
+        font-size: 12px;
+    }
+    .logo {
+        padding-bottom: 1em;
+    }
+    form {
+        display: flex;
+        padding-bottom: 1em;
+        input {
+            padding: 1em;
+            border: 0;
+        }
+        button {
+            background-color: $pinkColor;
+            color: #fff;
+            padding: .3em;
+            border-radius: 5px;
+            width: 30%;
+        }
+    }
+    h3 {
+        padding-bottom: 1em;
+    }
+    a {
+        display: block;
+        padding: .5em 0;
+        color: #333;
+        font-size: 12px;
+    }
+    
+}
+section.footer {
+    background-color: #ccc;
+    font-size: 12px;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 1em 0;
+    }
+    .icons {
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
 
 // Utilities
 .flex {
